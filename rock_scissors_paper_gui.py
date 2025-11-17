@@ -108,7 +108,7 @@ def clear_results():
 
 
 # ==============================
-# 8. Game Logic
+# 9. Game Logic
 # ==============================
 def get_computer_choice():
     return random.choice(["Rock", "Paper", "Scissors"])
@@ -140,14 +140,14 @@ def play():
     winner_label.config(text=f">>> {result} <<<")
 
 # ==============================
-# 10. Button Commands
+# 11. Button Commands
 # ==============================
 play_btn.config(command=play)
 again_btn.config(command=lambda: [clear_results()])
 quit_btn.config(command=root.quit)
 
 # ==============================
-# 11. Start App
+# 12. Start App
 # ==============================
 root.mainloop()
 
